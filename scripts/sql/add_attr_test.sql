@@ -1,0 +1,1 @@
+ALTER TABLE products ADD COLUMN attr_test TEXT NULL;

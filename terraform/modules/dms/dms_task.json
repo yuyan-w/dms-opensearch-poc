@@ -1,0 +1,51 @@
+{
+  "TargetMetadata": {
+    "TargetSchema": "",
+    "SupportLobs": true,
+    "FullLobMode": false,
+    "LimitedSizeLobMode": true,
+    "LobMaxSize": 65535,
+    "ParallelLoadThreads": 2,
+    "ParallelLoadBufferSize": 50,
+    "ParallelApplyThreads": 2,
+    "ParallelApplyBufferSize": 100,
+    "ParallelApplyQueuesPerThread": 1
+  },
+  "FullLoadSettings": {
+    "TargetTablePrepMode": "DO_NOTHING",
+    "CreatePkAfterFullLoad": false,
+    "StopTaskCachedChangesApplied": false,
+    "StopTaskCachedChangesNotApplied": false,
+    "MaxFullLoadSubTasks": 4,
+    "TransactionConsistencyTimeout": 600,
+    "CommitRate": 10000
+  },
+  "Logging": {
+    "EnableLogging": true
+  },
+  "ControlTablesSettings": {
+    "HistoryTableEnabled": false,
+    "StatusTableEnabled": false,
+    "SuspendedTablesTableEnabled": false
+  },
+  "StreamBufferSettings": {
+    "StreamBufferCount": 3,
+    "StreamBufferSizeInMB": 8
+  },
+  "ChangeProcessingTuning": {
+    "BatchApplyPreserveTransaction": true,
+    "BatchApplyTimeoutMin": 1,
+    "BatchApplyTimeoutMax": 30,
+    "BatchSplitSize": 0
+  },
+  "ErrorBehavior": {
+    "DataErrorPolicy": "LOG_ERROR",
+    "TableErrorPolicy": "SUSPEND_TABLE",
+    "ApplyErrorUpdatePolicy": "LOG_ERROR",
+    "ApplyErrorDeletePolicy": "LOG_ERROR",
+    "ApplyErrorInsertPolicy": "LOG_ERROR"
+  },
+  "ValidationSettings": {
+    "EnableValidation": false
+  }
+}

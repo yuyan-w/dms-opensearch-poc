@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "include-products-in-dmsapp",
+      "object-locator": {
+        "schema-name": "dmsapp",
+        "table-name": "products"
+      },
+      "rule-action": "include"
+    }
+  ]
+}
